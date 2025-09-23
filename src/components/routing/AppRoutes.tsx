@@ -96,6 +96,8 @@ const AppRoutes = () => {
                     </ProtectedRoute>
                   } 
                 />
+                {/* Book Slot route removed intentionally */}
+                {/* 
                 <Route 
                   path="/slot-booking" 
                   element={
@@ -104,6 +106,7 @@ const AppRoutes = () => {
                     </ProtectedRoute>
                   } 
                 />
+                */}
                 <Route 
                   path="/payment" 
                   element={

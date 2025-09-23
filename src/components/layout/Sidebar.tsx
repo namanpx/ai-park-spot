@@ -43,15 +43,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
       ),
     },
     {
-      name: 'Slot Booking',
-      href: '/slot-booking',
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3a4 4 0 118 0v4m-4 8V9m0 2h8m-8 0h8" />
-        </svg>
-      ),
-    },
-    {
+      // Book Slot removed intentionally
       name: 'My Bookings',
       href: '/my-bookings',
       icon: (

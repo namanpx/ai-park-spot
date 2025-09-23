@@ -122,7 +122,8 @@ const Dashboard = () => {
         <div className="lg:col-span-2">
           <div className="bg-white rounded-lg shadow p-6">
             <h2 className="text-xl font-bold text-gray-900 mb-4">Quick Actions</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {/* Book Slot removed intentionally */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Link
                 to="/parking-map"
                 className="flex flex-col items-center p-6 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors group"
@@ -134,19 +135,6 @@ const Dashboard = () => {
                 </div>
                 <span className="mt-3 text-sm font-medium text-gray-900">Find Parking</span>
                 <span className="text-xs text-gray-500">{availableSlots} spots available</span>
-              </Link>
-
-              <Link
-                to="/slot-booking"
-                className="flex flex-col items-center p-6 bg-success-50 rounded-lg hover:bg-success-100 transition-colors group"
-              >
-                <div className="w-12 h-12 bg-success-600 rounded-lg flex items-center justify-center group-hover:bg-success-700 transition-colors">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3a4 4 0 118 0v4m-4 8V9m0 2h8m-8 0h8" />
-                  </svg>
-                </div>
-                <span className="mt-3 text-sm font-medium text-gray-900">Book Slot</span>
-                <span className="text-xs text-gray-500">Reserve instantly</span>
               </Link>
 
               <Link
